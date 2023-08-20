@@ -23,38 +23,5 @@ class GithubSearchBloc extends Bloc<GithubSearchEvent, GithubSearchState> {
       }
     });
   }
-    // on<SearchPokemonEvent>((event, emit) async{
-    //   emit(UserLoadingState());
-    //   try{
-    //     final searchPok = await pokemonRepo.searchUser(searchQuery: event.query);
-    //     emit(UserSearchState(searchPok));
-    //   } catch(e){
-    //     emit(UserErrorState(e.toString()));
-    //   }
-    // });
   }
-//   @override
-//   void onTransition(Transition<PokemonEvent, PokemonState> transition) {
-//     super.onTransition(transition);
-//     debugPrint(transition.toString());
-//   }
-//
-//   @override
-//   void onChange(Change<PokemonState> change) {
-//     super.onChange(change);
-//     debugPrint(change.toString());
-//     debugPrint(change.currentState.toString());
-//     debugPrint(change.nextState.toString());
-//   }
-//
-//   @override
-//   void onError(Object error, StackTrace stackTrace) {
-//     super.onError(error, stackTrace);
-//     debugPrint(error.toString());
-//   }
-//
-//   @override
-//   void onEvent(PokemonEvent event) {
-//     super.onEvent(event);
-//     debugPrint(event.toString());
-//   }
+
