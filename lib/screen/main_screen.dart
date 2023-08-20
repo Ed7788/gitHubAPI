@@ -39,7 +39,12 @@ class GithubSearchScreen extends StatelessWidget {
             children: <Widget>[
               TextField(
                 controller: _usernameController,
-                decoration: const InputDecoration(labelText: 'Enter GitHub Username'),
+                decoration: InputDecoration(
+                  labelText: 'Enter GitHub Username',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
+                  ),
+                ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
