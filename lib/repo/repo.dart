@@ -10,7 +10,7 @@ class UserRepo {
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       final users = data['items'].map<User>((userData) => User.fromJson(userData)).toList();
-      return users; // Return a Future<List<User>>
+      return users;
     } else {
       throw Exception('Failed to fetch users');
     }
